@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our Booking page</title>
+    <link rel="stylesheet" href="Book/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <style>  
+        
+     #sideNav{
+    width:201px;
+    height:100vh;
+    position:fixed;
+    right:0;
+    top:0;
+    background: rgb(171, 173, 11);
+    z-index: 2;
+    }
+
+    nav ul li{
+    list-style-type: none;
+    margin:50px 20px;
+    }
+    nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    transition:0.45s;
+    }
+    nav ul li a:hover{
+    color:blue;
+    }
+
+    #menuBtn{
+    width:50px;
+    height:50px;
+    background:rgb(171, 173, 11);
+    text-align:center;
+    position:fixed;
+    right:30px;
+    top:20px;
+    border-radius: 3px;
+    z-index:3;
+    cursor:pointer;
+    }
+
+    #menuBtn img{
+    width:40px;
+    margin-top: 4px;
+    }
+
+    body{
+   width:100%;
+   height:100%;
+   background-image:url(images/one-happy-cleaner.png);
+   background-size: cover;
+   background-position:center;
+   height:100vh;
+    }
+    .inner-layer{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background-color: rgba(255, 217, 0, 0.445);
+    }
+
+    .form-data{
+    margin-top:15%;
+    background-color:rgba(255, 255, 255, 0.4);
+    border-radius:13px;
+    }
+
+    .form-body{
+    padding:14px;
+    }
+
+    .form-heading{
+    color:black;
+    margin-left:15px;
+    margin-bottom:10px;
+    padding:20px;
+    }
+     
+    .form-control{
+    background-color:rgba(81, 255, 0, 0.349)
+    }
+    
+    .btn-appointment{
+    background-color:rgba(0, 139, 163, 0.937);
+    }
+   
+  
+  
+   
+    </style>
+
+
+  
+     <div class="inner-layer">
+   <div class="container">
+    <div class="row">
+        <div class="col-sm-7">
+        </div>
+        <div class="col-sm-5">
+            <div class="form-data">
+                <div class="form-body">
+                    <div class="row form-row">
+                        <input type="text" placeholder="Enter Full Name" class="form-control">
+                    </div>
+                    <div class="row form-row">
+                        <input type="text" placeholder="Enter Mobile Number" class="form-control">
+                    </div>
+                    <div class="row form-row">
+                        <input type="text"  placeholder="Enter Email Address" class="form-control">
+                    </div>
+                    <div class="row form-row">
+                        <input id="dat"  type="text" placeholder="Booking Slot Date" class="form-control">
+                    </div>
+                    <div class="row form-row">
+                        <input   type="text" placeholder="Time" class="form-control">
+                    </div>
+                    <br>
+                    <h6>Address Details</h6>
+                    <div class="row form-row">
+                    <div class="col-sm-6">
+                        <div class="row form-row">
+                            <input  type="text" placeholder="Area" class="form-control">
+                        </div>
+                    </div>
+                   
+                    <div class="col-sm-6">
+                        <div class="row form-row">
+                            <input type="text"  placeholder="City" class="form-control">
+                        </div>
+                    </div>
+                       <div class="col-sm-6">
+                        <div class="row form-row">
+                            <input type="text"  placeholder=" State" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row form-row">
+                            <input type="text"  placeholder=" Postal code" class="form-control">
+                        </div>
+                    </div>
+                   
+                    <button  class=" btn btn-success btn-appointment" >
+                     <h5>Book Slot Now </h5>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+</form>
+<div class="form-heading">
+    <h1>Book Your Slot</h1>
+    <p>You can Book your Slot<br> and we will immidiately <br>send the cleaner over to you<Br> and make your house <br>look spotless</p>
+    </div>
+    <script src="Book/js/jquery-3.6.0.min.js"></script>
+    <script src="Book/js/popper.min.js"></script>
+    <script src="Book/js/bootstrap.min.js"></script>
+    <script src="Book/js/bootstrap-datepicker.js"></script>
+    <div id="sideNav">
+        <nav>   
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Book.html">BOOK SLOT</a></li>
+            <li><a href="Purchase.html">PURCHASE</a></li>
+            <li><a href="Members.html">MEMBERS</a></li>
+            <li><a href="Meet.html">CONTACT US</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+          </ul>
+        </nav>
+        </div>
+       
+        <div id="menuBtn">
+        <img src ="images/menu-good.png" id="menu">
+        </div>
+        <script>
+        var menuBtn= document.getElementById("menuBtn")
+        var menuBtn= document.getElementById("sideNav")
+        var menuBtn= document.getElementById("menu")
+        
+        sideNav.style.right="-250px"
+        
+        menuBtn.onclick=function() {
+          if(sideNav.style.right=="-250px"){
+          sideNav.style.right="0";
+        }
+        
+        else{
+         sideNav.style.right="-250px"
+        }
+        }
+        </script>
+            <script>
+                $(document).ready(function(){
+                $("#dat").datepicker();
+                })
+
+               
+                
+                </script>
+  
+    
+</body>
+</html>
+
+
+
+   
+  
+
+   
+

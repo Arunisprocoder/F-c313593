@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why choose Us</title>
+</head>
+<body>
+    
+</body>
+</html>
+<style>
+     #sideNav{
+      width:201px;
+      height:100vh;
+      position:fixed;
+      right:0;
+      top:0;
+      background: rgb(171, 173, 11);
+      z-index: 2;
+      }
+
+      nav ul li{
+      list-style-type: none;
+      margin:50px 20px;
+      }
+      nav ul li a{
+      text-decoration: none;
+      color:#fff;
+      }
+
+      #menuBtn{
+      width:50px;
+      height:50px;
+      background:rgb(171, 173, 11);
+      text-align:center;
+      position:fixed;
+      right:30px;
+      top:20px;
+      border-radius: 3px;
+      z-index:3;
+      cursor:pointer;
+      }
+
+      #menuBtn img{
+      width:40px;
+      margin-top: 4px;
+      }
+#feature{
+    width: 100%;
+    padding: 70px 0;
+   }
+
+   .title-text{
+   text-align: center;
+   padding-bottom:70px;
+   }
+   
+
+   .title-text p{
+    margin:auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight:bolder;
+    position: relative;
+    z-index: 1;
+    display: inline-block; 
+   }
+   .title-text p::after{
+   content:'';
+   width:50px;
+   height: 25px;
+   background: linear-gradient(rgba(157, 255, 0, 0.74),rgba(0, 238, 255, 0.5));
+   position:absolute;
+   top:-20px;
+   left: 0;
+   z-index: -1;
+   transform:rotate(-20deg);
+   border-top-left-radius: 35px;
+   border-bottom-right-radius: 35px;
+   }
+
+  
+   .title-text h1{
+    font-size: 50px;
+   }
+   .feature-box-1{
+   width:80%;
+   margin: 80px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: right;
+   text-align: center;
+   }
+
+   .feature-1{
+   flex-basis: 50%;
+   text-align: center;
+   }
+
+   .feature-img-1{
+   flex-basis: 50%;
+   margin: auto;
+   }
+   .feature-img-1 img{
+  
+   width:80%;
+   border-radius: 5px;
+   transform:translate(30%,10%)
+   }
+
+   .feature-1 h1{
+   text-align:center;
+   margin-bottom:10px;
+   font-weight: 100;
+   color: goldenrod
+   }
+
+   .feature-desc-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+   }
+
+   .feature-text-1{
+    text-align: center;
+    color:black;
+   }
+    
+
+   .feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+   }
+   
+
+   .feature-box{
+   width:80%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+   }
+
+   .feature{
+   flex-basis: 50%;
+   text-align: center;
+   }
+
+   .feature-img{
+   flex-basis: 50%;
+   margin: auto;
+   }
+   .feature-img img{
+   width:70%;
+   border-radius: 5px;
+   }
+
+   .feature h1{
+   text-align:center;
+   margin-bottom:10px;
+   font-weight: 100;
+   color: goldenrod
+   }
+
+   .feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+   }
+
+   .feature-text{
+    text-align: center;
+    color:black;
+   }
+    
+   nav ul li a:hover{
+    color:blue;
+    }
+   
+
+
+
+   
+   </style>
+
+<div id="sideNav">
+<nav>   
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="Book.html">BOOK SLOT</a></li>
+    <li><a href="Purchase.html">PURCHASE</a></li>
+    <li><a href="Members.html">MEMBERS</a></li>
+    <li><a href="Meet.html">CONTACT US</a></li>
+    <li><a href="Meet.html">REGISTER</a></li>
+  </ul>
+</nav>
+</div>
+<div id="menuBtn">
+<img src ="images/menu-good.png" id="menu">
+</div>
+<script>
+var menuBtn= document.getElementById("menuBtn")
+var menuBtn= document.getElementById("sideNav")
+var menuBtn= document.getElementById("menu")
+
+sideNav.style.right="-250px"
+
+menuBtn.onclick=function() {
+  if(sideNav.style.right=="-250px"){
+  sideNav.style.right="0";
+}
+
+else{
+ sideNav.style.right="-250px"
+}
+ }
+</script>
+</section>
+
+<!--FEATURES--->
+<section id="feature">
+<div class="title-text">
+<p>FEATURES</p>
+<h1>Why Choose Us</h1>
+
+
+<div class="feature-box">
+<div class="feature">
+  <h1>Experienced Staff</h1>
+  <div class="feature-desc">
+      <div class="feature-text">
+        The cleaner will  get your house clean in one hour.
+        It will look as if you had recently purchased the house
+        and it will impress your friends and families and
+        give you an astonishing personality and your house a
+        gorgeous  look.
+      </div>
+  </div>
+</div>
+<div class="feature-img">
+  <img src="images/clean-hotel.png">
+</div>
+</section>
+
+  <!----Next-->
+<div class="feature-box">
+<div class="feature">
+  <h1>Online booking</h1>
+  <div class="feature-desc">
+      <div class="feature-text">
+       Our booking process is extremly easy and anybody can do It will not take more than 15 seconds to acheive it.
+       You can even track your cleaner on our application page available for both android and Ios and also the cleaners 
+       live location will be sent to you via Whatsapp so you can always track your booking and be assured that the cleaner 
+       is on the way and be assured that you will get the best
+      </div>
+  </div>
+</div>
+<div class="feature-img">
+  <img src="images/online-booking.png">
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div class="feature-box-1">
+  <div class="feature-1">
+    <h1>Affordable price</h1>
+    <div class="feature-desc-1">
+        <div class="feature-text-1">
+       Our price is very good and affordable and you are getting good value and a quality that is unmatched by any other service provide.
+       Your house will look beautiful for a very good price. 
+        </div>
+    </div>
+  </div>
+  <div class="feature-img-1">
+    <img src="images/good-price.png">
+  </div>
+  
+  
+  
+
+
+</section>

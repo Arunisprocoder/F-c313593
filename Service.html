@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>   
+    *{
+      margin:0;
+      padding:0;
+      
+    }
+    
+        #sideNav{
+        width:201px;
+        height:100vh;
+        position:fixed;
+        right:0;
+        top:0;
+        background: rgb(171, 173, 11);
+        z-index: 2;
+        }
+  
+        nav ul li{
+        list-style-type: none;
+        margin:50px 20px;
+        }
+        nav ul li a{
+        text-decoration: none;
+        color:#fff;
+        }
+  
+        #menuBtn{
+        width:50px;
+        height:50px;
+        background:rgb(171, 173, 11);
+        text-align:center;
+        position:fixed;
+        right:30px;
+        top:20px;
+        border-radius: 3px;
+        z-index:3;
+        cursor:pointer;
+        }
+  
+        #menuBtn img{
+        width:40px;
+        margin-top: 4px;
+        }
+  
+        .title-text{
+   text-align: center;
+   padding-bottom:70px;
+   }
+
+   .service-box{
+    flex-basis:48%;
+    text-align: center;
+    border-radius:7px;
+    margin-bottom:20px;
+    color:#ffffff;
+   }
+   
+
+   .title-text p{
+  
+    margin:auto;
+    font-size: 20px;
+    color:goldenrod;
+    font-weight:bolder;
+    position: relative;
+    z-index: 1;
+    display: inline-block; 
+   }
+  
+
+
+   #Service{
+   width:100%;
+   padding: 70px 0;
+   margin-top: -60px;
+   background:rgb(255, 255, 255);
+   }
+  
+
+   .service-box{
+   width:80%;
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:space-around;
+   }
+
+   .single-service{
+   flex-basis:48%;
+   text-align:center;
+   border-radius: 7px;
+   margin-bottom: 10px;
+   color:black;
+   position: relative;
+   }
+   .single-service img{
+    width:100%;
+    border-radius: 7px;
+    transform:translate(25%, 25%);
+   }
+   .overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor:pointer;
+    background: linear-gradient(rgba(0, 240, 180, 0.5),rgba(244,59,19,0.3));
+    transform:translate(25%, 23%);
+    opacity: 0;
+    transition: 1s;
+   
+   }
+
+   .single-service:hover .overlay{
+    opacity:1;
+   }
+
+   .service-desc{
+    width:80%;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    opacity:0;
+    transform:translate(-25%,-25%);
+    transition: 1s;
+   }
+  hr{
+  background: #fff;
+  height:2px;
+  border:0;
+  margin: 15px auto;
+  width:60%;
+  }
+   .dob p{
+   font-size:15px;
+   color:black;
+   }
+
+   .service-desc p{
+   font-size:14px;
+   }
+
+   .single-service:hover .service-desc{
+   bottom:40%;
+   opacity:1;
+   }
+
+   nav ul li a:hover{
+    color:blue;
+    }
+
+
+
+    </style>
+  
+      
+  
+       
+
+  
+  <div id="sideNav">
+    <nav>   
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Book.html">BOOK SLOT</a></li>
+        <li><a href="Purchase.html">PURCHASE</a></li>
+        <li><a href="Members.html">MEMBERS</a></li>
+        <li><a href="Meet.html">CONTACT US</a></li>
+        <li><a href="Meet.html">REGISTER</a></li>
+      </ul>
+   </nav>
+  </div>
+  <div id="menuBtn">
+    <img src ="images/menu-good.png" id="menu">
+  </div>
+  <script>
+    var menuBtn= document.getElementById("menuBtn")
+    var menuBtn= document.getElementById("sideNav")
+    var menuBtn= document.getElementById("menu")
+  
+    sideNav.style.right="-250px"
+  
+    menuBtn.onclick=function() {
+      if(sideNav.style.right=="-250px"){
+      sideNav.style.right="0";
+    }
+  
+    else{
+     sideNav.style.right="-250px"
+    }
+  }
+
+ 
+  </script>
+  <!---Service-->
+<br><br><br>
+  <section id="Service"> 
+    <section id="feature">
+      <div class="title-text">
+      <p>SERVICES</p>
+      <h1>What services we offer</h1>
+      <br><br><br>
+      <div class="service-box">
+      <div class="single-service">
+      <img src="images/mopping.png">
+      <div class="overlay"></div>
+      <div class="service-desc">
+      <h3>Mopping</h3>
+      <hr>
+      <div class="dob">
+      <p>We will mop your floors in a manner <br>that they will start to shine</p>
+      </div>
+      </div>
+      </div>
+      <div class="single-service">
+      <img src="images/sweeping.png">
+      <div class="overlay"></div>
+      <div class="service-desc">
+        <h3>Sweeping</h3>
+        <hr>
+        <div class="dob">
+        <p>We will Sweep your floors in a manner <br>that all of the dust will disappear</p>
+        </div>
+        </div>
+      </div>
+      <div class="single-service">
+      <img src="images/balcony-putzing.png">
+      <div class="overlay"></div>
+      <div class="service-desc">
+        <h3>Balcony-Cleaning</h3>
+        <hr>
+        <div class="dob">
+        <p>We will clean the railings<br> and make them look very fresh</p>
+        </div>
+        </div>
+      </div>
+      
+      <div class="single-service">
+      <img src="images/bathroom-cleaning.png">
+      <div class="overlay"></div>
+      <div class="service-desc">
+      <h3>Bathroom-Cleaning</h3>
+        <hr>
+        <div class="dob">
+        <p>We will make sure that the bathroom<br> looks aestethically appealing</p>
+      </div>
+        </div>
+      </div>
+
+      <div class="single-service">
+        <img src="images/cleaning-kitchen.png">
+        <div class="overlay"></div>
+        <div class="service-desc">
+        <h3>Kitchen-Cleaning</h3>
+          <hr>
+          <div class="dob">
+          <p>We will make the Kitchen so clean<br> That you can eat of the floors of it</p>
+        </div>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="images/washing-dishes.png">
+          <div class="overlay"></div>
+          <div class="service-desc">
+          <h3>Washing Dishes</h3>
+            <hr>
+            <div class="dob">
+            <p>We will make the Dishes <br> look spick and span </p>
+            
+          </div>
+            </div>
+          </div>
+
+     
+  </section>
+</body>
+</html>
